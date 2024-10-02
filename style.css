@@ -1,0 +1,402 @@
+
+*{
+    font-family:montserrat;
+}
+body{
+    background: f1fbff;
+}
+.section-padding{
+padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top:25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(247, 241, 241, 0.7);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+}
+.navbar-Light .navbar-brand:focus,
+.navbar-Light .navbar-brand:hover{
+    color:#e57017;
+}
+
+.navbar-Light .navbar-nav .navbar-Link{
+    color: #e57017;
+}
+.w-100{
+    height: 100vh;
+}
+.service .card-body i{
+    font-size: 50px;
+}
+/*  responsive css  */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .navbar {
+        justify-content: flex-end; /* Align navbar items to the right */
+    }
+    .navbar-nav{
+        text-align: right;
+    }
+    .carousel-caption h{
+        font-size: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .catousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12 px;
+    }
+}
+
+
+/* Styles for the slides */
+.slides {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    text-align: center;
+}
+
+/* Navigation styles */
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgba(255, 249, 249, 0.923);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ee600e;/* Set background color */
+    color: white; /* Set text color */
+    opacity: 0.8;
+    
+}
+.rounded-button {
+    border-radius: 20px; /* Adjust the value to change the roundness */
+    padding: 10px 20px; /* Add padding for better visual appearance */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Example text color */
+    border: none; /* Remove default button border */
+}
+body {
+    text-align: center; /* Center align the contents of the body */
+}
+.video-container1 {
+    max-width: 1000px; /* Set the maximum width of the video container */
+    margin: 0 auto; /* Center the video horizontally */
+    padding: 20px; /* Add padding around the video */
+}
+
+.video-container1 video {
+    width: 100%; /* Set the video width to fill its container */
+    height: auto; /* Allow the video to scale proportionally */
+    display: block; /* Ensure the video behaves as a block element */
+}
+
+
+.about-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    height: 100%; /* Ensure the container takes up the full height */
+}
+.btn-oval {
+    border-radius: 50px; /* Half of the height to make it oval */
+    padding: 8px 20px; /* Adjust as needed */
+    margin-left: 10px;
+    color: rgb(233, 97, 23); /* Adjust spacing between buttons */
+}
+
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider1-container {
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Style for slide wrapper */
+.slide1-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Style for individual slide */
+.slide1 {
+    flex: 0 0 auto;
+    width: 100%; /* Ensure each slide takes up the full width */
+    padding: 0 10px; /* Add some spacing between slides if needed */
+    box-sizing: border-box;
+}
+.slide1 img {
+    width: 100%; /* Ensure the image fills its container */
+    display: block;
+}
+
+/* Navigation dots style */
+.slider1-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+.slider2-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #fafbfd;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+/* Style for slide wrapper */
+.slide2-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Style for individual slide */
+.slide2 {
+    min-width: 1200px;
+    padding: 90px;
+    text-align: center;
+    background-color: #0f065f;
+    border: 1px solid #edf2ef;
+    border-radius: 5px;
+    color: white; 
+}
+
+/* Style for navigation buttons */
+.slider2-controls {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    bottom: 10px;
+    text-align: center;
+}
+
+.slider2-control {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #0f065f;
+    border: 1px solid #f0f4f5;
+    border-radius: 5px;
+    margin: 0 135px; /* Increased margin */
+    display: inline-block;
+}
+
+/* Style to center text between navigation controls */
+.slide2-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(40px + 10px); /* Height of navigation controls + bottom margin */
+}
+body  {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.black-background1 {
+    background-color: #000;
+    color: orange;
+    padding: 200px;
+    text-align: center;
+}
+ .content-section {
+            margin-top: 100px;
+        }
+
+.thick-line {
+            border-top: 5px solid rgb(234, 232, 229); /* Adjust thickness as needed */
+            width: 50%; /* Adjust width as needed */
+            margin: 30px auto; /* Adjust margin as needed */
+        }
+        body  {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          header {
+            background-color: #060323; /* Change this to your desired background color */
+            color: #fff; /* Change this to your desired text color */
+            padding: 20px;
+        }
+          nav {
+            background-color: #060323;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+          }
+          
+          nav a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          
+          nav a:hover {
+            color: #fff;
+            background-color: #f3893e;
+          }
+          
+          section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px;
+          }
+          
+          article {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 4px #ccc;
+            margin: 05px;
+            padding: 05px;
+            width: 15%;
+          }
+          
+          h2 {
+            font-size: 24px;
+            margin-top: 0;
+            text-align: center;
+          }
+          
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+          }
+          
+          p {
+            margin: 10px 0;
+            text-align: justify;
+          }
+
+
+          <!--copyright-->
+
+
+          footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+          }
+          .content-section {
+            margin-top: 100px;
+        }
+        
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+            max-width: 1170px;
+            margin:auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style:none;
+        }
+        footer{
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col hd{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+    

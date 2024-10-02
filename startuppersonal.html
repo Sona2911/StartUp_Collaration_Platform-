@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Contact Form</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Us As Startup</h2>
+    <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+      <div class="input-group">
+        <input type="text" name="subject" placeholder="Subject" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="startup_name" placeholder="Startup Name" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="phone_sector" placeholder="Phone Sector" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="fund_ask" placeholder="Funding Required" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="valuation_ask" placeholder="Pre-money Valuation" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="location" placeholder="Location" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="founder_linkedln_url" placeholder="Founder LinkedIn URL" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="phone" placeholder="Your Phone Number" required>
+      </div>
+      <div class="input-group">
+        <input type="file" name="pitch_deck" accept=".pdf,.ppt,.pptx,.doc,.docx,.txt" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="referred_name" placeholder="Referred Name">
+      </div>
+      <div class="input-group">
+        <textarea name="business_description" placeholder="Brief Business Description"></textarea>
+      </div>
+      <div class="input-group">
+        <textarea name="message" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
