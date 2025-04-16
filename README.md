@@ -69,7 +69,7 @@ Unit tests were written to validate backend routes, authentication logic, matchm
 - Admin Moderation Turnaround Time  
 
 ---
-🧑‍💻 Contributors
+🧑‍💻 Contributor
 Sonali Kotlapure – Full Stack Developer
 (This is an independent project developed from scratch.)
 
